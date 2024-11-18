@@ -21,7 +21,7 @@ interface FeedProps {
 }
 
 export default function Feed({ name }: FeedProps) {
-	let { comments }:any = commentsData;
+	let { comments } = commentsData;
 
 	if (name === "ida") {
 		comments = idaCommmentsData.comments;
@@ -34,7 +34,7 @@ export default function Feed({ name }: FeedProps) {
 	}
 	return (
 		<div className="p-4 space-y-4 overflow-y-scroll border border-gray-800 col-span-8">
-			{comments.map((comment:any) => (
+			{comments.map((comment) => (
 				<Tweet
 					key={comment.id}
 					name={comment.name}
@@ -53,24 +53,24 @@ export default function Feed({ name }: FeedProps) {
 
 interface Reply {
 	id: number;
-	name: string;
-	verified: boolean;
-	handle: string;
-	comment: string;
-	img: string;
-	date: string;
-	contentImg: string;
+	name?: string;
+	verified?: boolean;
+	handle?: string;
+	comment?: string;
+	img?: string;
+	date?: string;
+	contentImg?: string;
 }
 
 interface TweetProps {
-	name: string;
-	verified: boolean;
-	handle: string;
-	comment: string;
+	name?: string;
+	verified?: boolean;
+	handle?: string;
+	comment?: string;
 	replies: Reply[];
-	img: any;
-	date: string;
-	contentImg: string;
+	img?: any;
+	date?: string;
+	contentImg?: string;
 }
 
 const Tweet = ({
