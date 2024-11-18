@@ -1,4 +1,3 @@
-import { BadgeCheck } from "lucide-react";
 import Link from "next/link";
 
 export default function RightSidebar() {
@@ -6,7 +5,7 @@ export default function RightSidebar() {
 		<div className="p-4 space-y-6 col-span-4">
 			<div className="border rounded-xl border-gray-700 p-4 bg-black">
 				<h2 className="font-bold text-lg text-white mb-4">
-					What's happening
+					What&apos;'s happening
 				</h2>
 				<Trending />
 			</div>
@@ -133,7 +132,7 @@ const Trending = () => {
 	return (
 		<div className="space-y-4">
 			{trends.map((trend, index) => (
-				<Link href={trend.link} target="__blank">
+				<Link href={trend.link} target="__blank" key={index}>
 					<div
 						key={index}
 						className="flex justify-between items-center text-white hover:bg-zinc-900 p-2 rounded-lg cursor-pointer"
