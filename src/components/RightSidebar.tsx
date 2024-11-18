@@ -5,7 +5,7 @@ export default function RightSidebar() {
 		<div className="p-4 space-y-6 col-span-4">
 			<div className="border rounded-xl border-gray-700 p-4 bg-black">
 				<h2 className="font-bold text-lg text-white mb-4">
-					What&apos;'s happening
+					What is happening
 				</h2>
 				<Trending />
 			</div>

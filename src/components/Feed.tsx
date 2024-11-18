@@ -68,7 +68,7 @@ interface TweetProps {
 	handle?: string;
 	comment?: string;
 	replies: Reply[];
-	img?: any;
+	img?: string;
 	date?: string;
 	contentImg?: string;
 }
